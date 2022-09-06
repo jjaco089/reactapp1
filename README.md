@@ -1,0 +1,1 @@
+A simple React app which adds and multiplies two integers
