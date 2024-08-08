@@ -6,16 +6,22 @@ import Product from './product';
 
 function App() {
   const [op, setOp] = useState(<Sum />);
+  const [sumColor, setSumColor] = useState('red');
+  const [proColor, setProColor] = useState('gray');
   function opAdd() {
-    setOp(<Sum />)
+    setOp(<Sum />);
+    setSumColor('red');
+    setProColor('gray');
   }
   function opMul() {
-    setOp(<Product />)
+    setOp(<Product />);
+    setSumColor('gray');
+    setProColor('red');
   }
   return <>
       <p>
-        <button onClick={opAdd}>Sum</button>
-        <button onClick={opMul}>Product</button>
+        <button style={{background: sumColor}} onClick={opAdd}>Sum</button>
+        <button style={{background: proColor}} onClick={opMul}>Product</button>
       </p>
       <p>{op}</p>
   </>
