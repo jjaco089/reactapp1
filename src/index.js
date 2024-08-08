@@ -13,9 +13,9 @@ function App() {
     setOp(<Product />)
   }
   return <>
-    {op}
     <button onClick={opAdd}>Sum</button>
     <button onClick={opMul}>Product</button>
+    {op}
   </>
 }
 
