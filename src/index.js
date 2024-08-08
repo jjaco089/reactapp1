@@ -13,10 +13,11 @@ function App() {
     setOp(<Product />)
   }
   return <>
-    <button onClick={opAdd}>Sum</button>
-    <button onClick={opMul}>Product</button>
-    <br></br>
-    {op}
+      <p>
+        <button onClick={opAdd}>Sum</button>
+        <button onClick={opMul}>Product</button>
+      </p>
+      <p>{op}</p>
   </>
 }
 
